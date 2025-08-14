@@ -46,7 +46,7 @@ python scraper.py --card "charizard"
 - Partial matches work — e.g. "charizard" will match Charizard ex.
 - Output will be saved as output.html and opened in your default browser automatically.
 
-Notes
+## Notes
 - The scraper obeys a fixed requests-per-second limit for speed and to avoid rate-limiting.
 - Works on Windows, macOS, and Linux without modification.
 - If a player drops from a tournament, their record will be shown like:
