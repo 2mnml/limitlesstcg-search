@@ -4,8 +4,6 @@ A high-speed, cross-platform Python scraper that searches **Limitless TCG** tour
 
 Supports **Windows, macOS, and Linux**.
 
----
-
 ## Features
 - Searches all completed Standard-format online tournaments from the last 4 weeks.
 - Matches card names **anywhere in the decklist** (Pokémon, Trainers, Energy).
@@ -17,8 +15,6 @@ Supports **Windows, macOS, and Linux**.
 - Filters out players below **40% win rate**.
 - Outputs results as a **neatly formatted HTML table** for easy viewing.
 
----
-
 ## Requirements
 - **Python 3.8+** (check with `python --version`)
 - Internet connection
@@ -28,41 +24,37 @@ Python dependencies:
 - `tqdm`
 - `uvloop` *(optional, for macOS/Linux speed boost)*
 
----
-
 ## Installation
 
 1. **Clone the repository**
 ```bash
 git clone https://github.com/YOUR_USERNAME/limitless-deck-scraper.git
 cd limitless-deck-scraper
+```
 
-	2.	Install dependencies
-
+2.	**Install dependencies**
+```bash
 pip install -r requirements.txt
 ```
 
-⸻
-
-Usage
+## Usage
 
 Run the script with the --card argument to search for a card name:
-
-python scraper.py --card "Blender"
-
-	•	Partial matches work — e.g. "Blender" will match Brilliant Blender.
-	•	Output will be saved as output.html and opened in your default browser automatically.
+```bash
+python scraper.py --card "charizard"
+```
+- Partial matches work — e.g. "charizard" will match Charizard ex.
+- Output will be saved as output.html and opened in your default browser automatically.
 
 Notes
-	•	The scraper obeys a fixed requests-per-second limit for speed and to avoid rate-limiting.
-	•	Works on Windows, macOS, and Linux without modification.
-	•	If a player drops from a tournament, their record will be shown like:
+- The scraper obeys a fixed requests-per-second limit for speed and to avoid rate-limiting.
+- Works on Windows, macOS, and Linux without modification.
+- If a player drops from a tournament, their record will be shown like:
 
+```bash
 0-2-0 Drop
-
-
-
-⸻
+```
+---
 
 License
 
