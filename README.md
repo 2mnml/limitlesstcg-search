@@ -28,8 +28,8 @@ Python dependencies:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/limitless-deck-scraper.git
-cd limitless-deck-scraper
+git clone https://github.com/2mnml/limitlesstcg-search.git
+cd limitlesstcg-search
 ```
 
 2.	**Install dependencies**
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 Run the script with the --card argument to search for a card name:
 ```bash
-python scraper.py --card "charizard"
+python lsearch.py --card "charizard"
 ```
 - Partial matches work — e.g. "charizard" will match Charizard ex.
 - Output will be saved as output.html and opened in your default browser automatically.
